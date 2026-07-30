@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 420px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 1.4rem;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 12px;
+            padding: 8px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        button {
+            padding: 10px 18px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Contact Us</h1>
+
+<form action="/contact" method="post">
+    <input type="text" name="name" placeholder="Enter your Name" required>
+    <input type="email" name="email" placeholder="Enter your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+    <button type="submit">Send</button>
+</form>
+
+</body>
+</html>
